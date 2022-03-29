@@ -57,7 +57,10 @@ function desencriptar(){
 document.getElementById("btn-clear").addEventListener("click", clear);
 function clear() {
     let msg = document.getElementById("input-texto");
+    let input = document.querySelectorAll("textarea");
     msg.value = "";
+    input.value = "";
+
 }
 
 
