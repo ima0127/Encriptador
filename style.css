@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: rgb(18, 234, 241);
+  background-color: rgb(234, 240, 240);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -24,9 +24,9 @@ body {
 }
 
 .box {
-  padding: 10px;
+  padding: 20px;
   margin: 0 10px 0 10px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 2px 1px rgba(131, 56, 56, 0.2);
   background-color: white;
   border-radius: 0.5em;
   width: 150vw;
@@ -43,17 +43,62 @@ body {
   border-radius: 0.5em;
 }
 
+ .ima{
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+
 .text-input, .text-input2 {
-  border-radius: 0.5em;
+  border-radius: 3px;
   display: block;
-  padding: 0.5em;
-  width: 100%;
-  height: 350px;
+  text-overflow: initial;
   border:none;
-  background: rgb(24, 163, 206);
+  background: rgb(54, 54, 54);
   color: #ffff;
   font-size: 1.2em;
+  resize: none;
 }
-input::placeholder{
+
+textarea{
+  padding: 12px 20px;
+}
+
+footer{
+  margin-top: 30px;
+  width: 100%;
+  padding: 10px 10px;
+  background: #323332;
+  text-align: center;
   color: #ffff;
+}
+
+footer a{
+  color: rgb(58, 138, 212);
+}
+
+
+@media (max-width: 788px) {
+  h1{
+    font-size: 30px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
+  main{
+    max-width: 500px;
+    display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin: 0 20px;
+  }
+  .box{
+    width: 95%;
+    height: 90%;
+    margin-bottom: 20px;
+  }
+  textarea{
+    width: 100%;
+  }
+  
 }

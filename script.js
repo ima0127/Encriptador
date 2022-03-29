@@ -20,20 +20,6 @@ No se permite acentuación de palabras
 */
 
 
-
-
-    let e = "enter";
-    let i = "imes";
-    let a = "ai";
-    let o = "ober";
-    let u = "ufat";
-
-    let enter = "e";
-    let imes = "i";
-    let ai = "a";
-    let ober = "o";
-    let ufat = "u";
-
 function encriptar(){
     
 
@@ -71,7 +57,10 @@ function desencriptar(){
 document.getElementById("btn-clear").addEventListener("click", clear);
 function clear() {
     let msg = document.getElementById("input-texto");
+    let input = document.querySelectorAll("textarea");
     msg.value = "";
+    input.value = "";
+
 }
 
 
